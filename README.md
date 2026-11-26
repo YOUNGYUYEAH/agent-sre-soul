@@ -11,6 +11,7 @@
 | `memory/troubleshooting/` | 排障思路：现象 → 假设 → 验证 → 结论，按领域（Linux / K8s / 网络 / DB / 可观测） |
 | `memory/patterns/` | 反复出现的思维模式、决策原则、踩坑经验 |
 | `memory/toolbox/` | 常用命令、脚本片段、工具用法 |
+| `skills/` | 可调用的排障流程（SKILL.md 格式，Claude Code / Codex 原生支持） |
 | `playbooks/` | 可直接执行的标准操作流程（变更、验证、应急） |
 
 ## 收录原则
@@ -21,6 +22,7 @@
 
 ## 移植
 
+- Skills：`./install.sh skills`（软链到 `~/.claude/skills`、`~/.codex/skills`）
 - Codex CLI：`./install.sh codex`（软链 `~/.codex/AGENTS.md`）
 - Claude Code：在本仓库目录内自动读取 `CLAUDE.md`；全局生效用 `./install.sh claude`（先备份原文件）
 - OpenCode / Cline / Aider 等：大多识别项目根的 `AGENTS.md`

@@ -27,5 +27,14 @@
 | `memory/troubleshooting/` | 历史排障记录（按 `_template.md` 新增） |
 | `playbooks/` | 标准操作流程 |
 
+## Skills（排障流程）
+遇到对应场景时，先读该 `SKILL.md` 再按步骤执行（Claude Code / Codex 可通过 `./install.sh skills` 原生加载）：
+
+| Skill | 何时用 |
+|---|---|
+| `skills/k8s-troubleshoot/SKILL.md` | Pod 异常、服务不通、节点 NotReady、HPA 等 K8s 问题 |
+| `skills/linux-troubleshoot/SKILL.md` | 主机负载高、IO/内存/磁盘/网络异常、服务起不来 |
+| `skills/log-error-triage/SKILL.md` | ES/EFK 日志错误巡检、发版后新错误排查 |
+
 ## 沉淀规则
 用户说「沉淀到 soul」时：按 `memory/troubleshooting/_template.md` 记录本次思路（不只是命令），严格脱敏（无公司名、项目代号、IP、域名、账号、凭据），提交并推送。
