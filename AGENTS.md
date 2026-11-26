@@ -20,8 +20,8 @@
 | `soul/principles.md` | 做方案、设计工具、写交付物前 |
 | `soul/troubleshooting.md` | 排障时（7 种排障模式 + 案例） |
 | `soul/change-and-delivery.md` | 变更、发布、扩容、新环境交付前 |
-| `soul/anti-patterns.md` | 汇报/交付前自检 |
-| `soul/collaboration.md` | 理解用户指令意图时 |
+| `soul/anti-patterns.md` | 汇报/交付前自检（草稿，待确认） |
+| `soul/collaboration.md` | 理解用户指令意图时（草稿，待确认） |
 | `memory/toolbox/*.md` | 需要具体命令时（已勘误） |
 | `memory/patterns/*.md` | 工作范围、可观测方法论、技术栈偏好 |
 | `memory/troubleshooting/` | 历史排障记录（按 `_template.md` 新增） |

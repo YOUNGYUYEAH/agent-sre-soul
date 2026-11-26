@@ -1,11 +1,13 @@
 ---
 name: collaboration
-description: 用户如何给 AI 下指令、如何验收、迭代节奏
+description: 用户如何给 AI 下指令、如何验收、迭代节奏（草稿，待用户确认）
 metadata:
   type: user
 ---
 
 # 与 AI 协作的方式
+
+> 草稿：内容尚待用户确认，仅作参考，不作为硬性规则。
 
 ## 下指令的典型方式
 
