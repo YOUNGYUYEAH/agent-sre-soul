@@ -6,7 +6,8 @@
 
 | 目录 | 内容 |
 |---|---|
-| `soul/` | 身份、价值观、沟通风格、工作原则（Agent 的人格层） |
+| `AGENTS.md` | 统一入口（核心规则 + 文件索引），`CLAUDE.md` 为其软链 |
+| `soul/` | 身份与沟通、工作原则、排障思维、变更交付、反模式、协作方式（Agent 的人格层） |
 | `memory/troubleshooting/` | 排障思路：现象 → 假设 → 验证 → 结论，按领域（Linux / K8s / 网络 / DB / 可观测） |
 | `memory/patterns/` | 反复出现的思维模式、决策原则、踩坑经验 |
 | `memory/toolbox/` | 常用命令、脚本片段、工具用法 |
@@ -20,5 +21,7 @@
 
 ## 移植
 
-- Claude Code：将 `soul/` 合并为 `~/.claude/CLAUDE.md`，`memory/` 作为记忆目录引用。
-- 其他 Agent：`soul/` 作为 system prompt，`memory/` + `playbooks/` 作为检索知识库。
+- Codex CLI：`./install.sh codex`（软链 `~/.codex/AGENTS.md`）
+- Claude Code：在本仓库目录内自动读取 `CLAUDE.md`；全局生效用 `./install.sh claude`（先备份原文件）
+- OpenCode / Cline / Aider 等：大多识别项目根的 `AGENTS.md`
+- DeepSeek API / 网页等无文件机制：`./install.sh prompt` 生成 `dist/system-prompt.md`，贴入系统提示词
